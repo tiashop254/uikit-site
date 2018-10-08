@@ -1,8 +1,8 @@
-.uk-heading-primary, .uk-heading-hero, .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Kanit', sans-serif;
+.uk-heading-primary, .uk-heading-hero{
+    font-family: 'Lora', sans-serif;
 }
 
-.uk-card h1, .uk-card .button{
+h1, h2, h3, h4, h5, h6, .uk-card h1, .uk-card .button{
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -43,7 +43,7 @@ html, p{
 
 .uk-heading-hero{
     color: #111;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 @media (min-width: 1200px){
@@ -52,19 +52,61 @@ html, p{
 }}
 
 .tm-background-muted{
-    background-color: #00000088 ;
+    background-color: #00000058 ;
 }
 
 .uk-heading-primary{
-    font-weight: 800;
     color: #111;
 }
 
 .uk-slider-items li{
-    max-width:600px;
+    max-width:450px;
     overflow: hidden;
-    max-height: 700px;
+    max-height: 600px;
+    width:fit-content;
 }
 .uk-slider-items li img{
-    width:100%;
+}
+
+.tm-section-title {
+    /* `writing-mode` has to be on the parent element to fix the width in Safari */
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+}
+
+.tm-section-title > * {
+    /* `writing-mode` has to be on the element which is rotated in IE 11 */
+    -ms-writing-mode: tb-lr;
+    /* Fix height in Edge and IE 11 */
+    display: inline-block;
+}
+
+/* `writing-mode` has to be on the element which is rotated in Edge */
+@supports (-ms-ime-align: auto) {
+
+    .tm-section-title { writing-mode: inherit; }
+    .tm-section-title > * { writing-mode: vertical-lr; }
+}
+
+/*
+ * Dash
+ */
+
+.tm-section-title > ::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    height: 15px;
+    width: 1px;
+    background-color: currentColor;
+}
+
+/*
+ * Utilit
+ */
+
+.tm-rotate-180 {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }

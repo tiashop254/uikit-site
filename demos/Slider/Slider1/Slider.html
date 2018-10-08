@@ -4,7 +4,7 @@
 
     <head>
 
-        <title>Title</title>
+        <title>Slider 1 - UIkit Demo</title>
         <meta charset="utf-8">
         <title>Slider 1 - UIkit demo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,61 +12,99 @@
         <link rel="stylesheet" href="./theme/slider.css" />
         <script src="../../../assets/uikit/dist/js/uikit.min.js"></script>
         <script src="../../../assets/uikit/dist/js/uikit-icons.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Kanit|Inconsolata|Lato|Montserrat|Poppins|Open+Sans|Source+Serif+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kanit|Inconsolata|Lato|Montserrat|Poppins|Open+Sans|Source+Serif+Pro|Lora" rel="stylesheet">
 
     </head>
 
     <body>
 
-        <div class="uk-height-viewport uk-flex uk-flex-bottom" style="background-color: #a1a596;">
+        <div class="uk-height-viewport uk-flex uk-flex-bottom" style="background-color: #a6a9a0;">
 
-            <div uk-slider>
+            <div uk-slider uk-slider="autoplay:true, autoplay-interval: 400">
 
                 <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@ uk-grid uk-flex-bottom">
 
-                    <li>
+                    <li class="uk-transition-toggle uk-padding-remove uk-margin-left">
+                        <img src="https://images.unsplash.com/photo-1491815194659-6a9bb08563f0?&auto=format&fit=crop&w=450&h=700" alt="">
 
-                        <img src="https://images.unsplash.com/photo-1491815194659-6a9bb08563f0?&auto=format&fit=crop&w=500&h=650" alt="">
-
-                    </li>
-
-                    <li>
-
-                        <img src="https://images.unsplash.com/photo-1517856642182-5e4122b67455?&auto=format&fit=crop&w=500" alt="">
-
-                    </li>
-
-                    <li>
-
-                        <img src="https://images.unsplash.com/photo-1451755032734-ada8d61ecf2f?&auto=format&fit=crop&w=500" alt="">
+                    	<div class="uk-position-cover uk-transition-fade tm-background-muted uk-light" style="">
+                    		<div class="uk-position-right tm-section-title tm-rotate-180">
+                    			<h2 class="">Camiño Real, Zeberio - 2016</h2>
+                    		</div>
+                    	</div>
 
                     </li>
 
-                    <li>
+                    <li class="uk-transition-toggle uk-padding-remove uk-margin-left">
 
-                        <img src="https://images.unsplash.com/photo-1534807265563-59a97c3a35a0?&auto=format&fit=crop&w=500" alt="">
+                        <img src="https://images.unsplash.com/photo-1468590069246-1d314d8c78bb?&auto=format&fit=crop&w=350&h=500" alt="">
+
+                    	<div class="uk-position-cover uk-transition-fade tm-background-muted uk-light" style="">
+                    		<div class="uk-position-right tm-section-title tm-rotate-180">
+                    			<h2 class="">Svinget, Mesinge - 2016</h2>
+                    		</div>
+                    	</div>
 
                     </li>
 
-                    <li>
+                    <li class="uk-transition-toggle uk-padding-remove uk-margin-left">
 
-                        <img src="https://images.unsplash.com/photo-1523165945512-d8b058e40514?&auto=format&fit=crop&w=500" alt="">
+                        <img src="https://images.unsplash.com/photo-1451755032734-ada8d61ecf2f?&auto=format&fit=crop&w=400" alt="">
+
+                    	<div class="uk-position-cover uk-transition-fade tm-background-muted uk-light" style="">
+                    		<div class="uk-position-right tm-section-title tm-rotate-180">
+                    			<h2 class="">Kemenaweg, Oss - 2012</h2>
+                    		</div>
+                    	</div>
 
                     </li>
 
-                    <li>
+                    <li class="uk-transition-toggle uk-padding-remove uk-margin-left">
 
-                        <img src="https://images.unsplash.com/photo-1489475989721-cb4f3a043603?&auto=format&fit=crop&w=650&h=700" alt="">
+                        <img src="https://images.unsplash.com/photo-1534807265563-59a97c3a35a0?&auto=format&fit=crop&w=500&h=500" alt="">
+
+                    	<div class="uk-position-cover uk-transition-fade tm-background-muted uk-light" style="">
+                    		<div class="uk-position-right tm-section-title tm-rotate-180">
+                    			<h2 class="">Rue de Fes, Tunis - 2017</h2>
+                    		</div>
+                    	</div>
+
+                    </li>
+
+                    <li class="uk-transition-toggle uk-padding-remove uk-margin-left">
+
+                        <img src="https://images.unsplash.com/photo-1507317688543-678604fef4a0?&auto=format&fit=crop&w=600&h=850" alt="">
+
+                    	<div class="uk-position-cover uk-transition-fade tm-background-muted uk-light" style="">
+                    		<div class="uk-position-right tm-section-title tm-rotate-180">
+                    			<h2 class="">Estrela, Larraga - 2016</h2>
+                    		</div>
+                    	</div>
+
+                    </li>
+
+                    <li class="uk-transition-toggle uk-padding-remove uk-margin-left">
+
+                        <img src="https://images.unsplash.com/photo-1523165945512-d8b058e40514?&auto=format&fit=crop&w=550&h=700" alt="">
+
+                    	<div class="uk-position-cover uk-transition-fade tm-background-muted uk-light" style="">
+                    		<div class="uk-position-right tm-section-title tm-rotate-180">
+                    			<h2 class="">Via Vicenza, Monte Oliveto - 2013</h2>
+                    		</div>
+                    	</div>
 
                     </li>
                   
                 </ul>
 
+                <a class="uk-position-bottom-left uk-position-small uk-hidden-hover uk-light" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        		<a class="uk-position-bottom-right uk-position-small uk-hidden-hover uk-light" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
             </div>
 
         </div>
 
-        <div class="uk-card uk-card-light uk-width-auto uk-position-top-right">
+        <div class="uk-card uk-card-light uk-width-auto uk-position-top-right uk-visible@m">
             <div class="uk-card-header">
                 <div class="uk-grid-small uk-flex-middle" uk-grid>
                     <div class="uk-width-auto">
@@ -110,9 +148,9 @@
             </div>
         </div>
 
-        <div class="uk-position-top-left uk-position-large">
+        <div class="uk-position-top-left uk-position-large" style="max-width:70%">
 
-            <h1 class="uk-heading-hero">Museum of Contemporary Architecture</h1>
+            <h1 class="uk-heading-primary">Museum of Contemporary Architecture</h1>
             
         </div>
 
