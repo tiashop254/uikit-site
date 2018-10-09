@@ -1,0 +1,139 @@
+.uk-heading-primary{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.uk-heading-hero{
+    font-family: 'Limelight', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .uk-card h1, .uk-card .button, .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.uk-light {
+    color: #fff;
+}
+
+.uk-card-light{
+    border: solid 1px #fff;
+}
+
+.uk-button-default{
+    color: #fff;
+}
+
+.uk-button-default:hover{
+    color: #fff;
+    background-color: #999;
+    border-color: #999;
+}
+
+.uk-button-text{
+    color: #fff;
+    border-color: #999;
+}
+
+.uk-button-text:hover{
+    color: #fff;
+}
+
+.uk-button-text:before{
+    border-color: #999;
+}
+
+.uk-heading-hero{
+    font-weight: 400;
+    color:#9530c7;
+}
+
+@media (min-width: 1200px){
+.uk-heading-hero{
+    font-size: 7.8rem;
+}}
+
+.tm-background-muted{
+    background-color: #00000058 ;
+}
+
+.uk-heading-primary{
+    /*color: #fff;*/
+}
+
+.uk-slider-items li{
+    max-width:450px;
+    overflow: hidden;
+    max-height: 600px;
+    width:fit-content;
+}
+.uk-slider-items li img{
+}
+
+.tm-section-title {
+    /* `writing-mode` has to be on the parent element to fix the width in Safari */
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+}
+
+.tm-section-title > * {
+    /* `writing-mode` has to be on the element which is rotated in IE 11 */
+    -ms-writing-mode: tb-lr;
+    /* Fix height in Edge and IE 11 */
+    display: inline-block;
+}
+
+/* `writing-mode` has to be on the element which is rotated in Edge */
+@supports (-ms-ime-align: auto) {
+
+    .tm-section-title { writing-mode: inherit; }
+    .tm-section-title > * { writing-mode: vertical-lr; }
+}
+
+/*
+ * Dash
+ */
+
+.tm-section-title > ::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    height: 15px;
+    width: 1px;
+    background-color: currentColor;
+}
+
+/*
+ * Utilit
+ */
+
+.tm-rotate-180 {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+.tm-background-red{
+    background-color: #ff006a !important;
+}
+
+.tm-background-grey{
+    background-color: #888 !important;
+}
+
+.tm-background-blue{
+    background-color: #0080ff !important;
+}
+
+.tm-background-purple{
+    background-color: #8840ac !important;
+}
+
+.tm-circle-small{
+    width: 25px;
+    height: 25px;
+    border-radius:50%;
+}

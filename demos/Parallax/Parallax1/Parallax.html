@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html style="background-color: #221">
+
+    <head>
+
+        <title>Parallax 1 - UIkit Demo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../../css/theme.css" />
+        <link rel="stylesheet" href="./theme/parallax.css" />
+        <script src="../../../assets/uikit/dist/js/uikit.min.js"></script>
+        <script src="../../../assets/uikit/dist/js/uikit-icons.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Kanit|Roboto|Lato|Montserrat|Poppins|Open+Sans|Source+Serif+Pro|Lora|Limelight" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+            <div uk-filter="target: .js-filter" class="">
+
+                <div class="uk-height-viewport uk-flex uk-flex-middle uk-flex-center">
+
+                    <h1 class="uk-heading-hero uk-light" uk-parallax="blur:0,20">Parallax</h1>
+                
+                </div>
+
+                <div id="container" class="uk-grid-collapse uk-grid" uk-grid="">
+
+                    <div class="uk-overflow-hidden uk-width-expand@l uk-grid-item-match">
+    
+                        <div class="uk-background-cover uk-text-left tm-background-grey uk-padding-small" uk-parallax="x:0,0,900; easing:5">
+                            <div class="uk-overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?&auto=format&fit=crop&w=250&h=400">
+                            </div>
+                        </div>
+            
+            
+                    </div>
+
+                    <div class="uk-overflow-hidden uk-width-expand@l uk-grid-item-match">
+
+                        <div class="uk-background-cover uk-text-right tm-background-grey uk-padding-small" uk-parallax="x:0,0,-900; easing:5">
+                            <div class=uk-overflow-hidden>
+                                <img src="https://images.unsplash.com/photo-1504297050568-910d24c426d3?&auto=format&fit=crop&w=250&h=400">
+                            </div>
+                        </div>
+
+        
+                    </div>
+    
+                </div>
+
+            </div>
+
+            <div class="uk-height-large"></div>
+
+            <div id="container" class="uk-height-large uk-background-cover uk-overflow-hidden uk-flex uk-flex-middle uk-flex-center" style="background-image: url('https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?&fit=crop&w=1300'); background-blend-mode: multiply;" uk-parallax=" background-color: #ff006a,#0080ff">
+                <h1 class="uk-light uk-heading- uk-text-" uk-parallax=""> Lorem ipsum</h1>
+            </div>
+
+
+            <div class="uk-height-small"></div>
+
+            <div class="uk-grid uk-grid-collapse uk-child-width-1-2 uk-margin-large-top">
+
+                <div class="uk-width-expand@m uk-flex uk-flex-middle uk-margin-large-left uk-margin-large-right uk-text-lead uk-light uk-text-center uk-text-left@m" uk-parallax="x:-65,0,0">
+                    <div>
+                    <h1>Lisa Grey</h1> 
+                    <p>Lorem Ipsum dolor sit amet, consectetuer adipiscing elit. </p><p>Cum sociis natoque penatibus et magnis dis parturient montes, <br>nascetur ridiculus mus. Donec quam felis, ultricies nec.
+                    </p>
+                </div>
+                </div>
+
+                <div class="uk-width-expand@m uk-flex uk-flex-middle uk-flex-center" uk-parallax="bgy:100;">
+                    
+                        <div class= "uk-border-circle uk-background-cover tm-background-blue" style="width:400px; height:400px; background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?&auto=format&fit=crop&h=400&w=400); background-blend-mode:multiply" uk-parallax="bgy:40,0,0">
+                            <div class= "uk-border-circle uk-background-cover" style="width:400px; height:400px; background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?&auto=format&fit=crop&h=400&w=400)" uk-parallax="bgy:-40,0,0; opacity:.6,1,.6; easing:.1"></div>
+                        </div>
+                    
+                </div>
+                
+
+            </div>
+
+            <div class="uk-height-large"></div>
+            <div class="uk-height-large"></div>
+            <div class="uk-height-large"></div>
+
+    </body>
+
+</html>
