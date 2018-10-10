@@ -22,14 +22,18 @@ html, p{
     border: solid 1px #fff;
 }
 
-.uk-button-default{
+.tm-button-default{
     color: #fff;
 }
 
-.uk-button-default:hover{
+.tm-button-default:hover{
     color: #fff;
-    background-color: #999;
-    border-color: #999;
+    background-color: #221;
+    border-color: #221;
+}
+
+.tm-logo-light:hover{
+    color: #221;
 }
 
 .uk-button-text{
@@ -121,7 +125,11 @@ html, p{
 }
 
 .tm-background-grey{
-    background-color: #888 !important;
+    background-color: #313127 !important;
+}
+
+.tm-background-dark{
+    background-color: #221;
 }
 
 .tm-background-blue{
@@ -137,3 +145,8 @@ html, p{
     height: 25px;
     border-radius:50%;
 }
+
+.tm-navbar-background:not(.uk-navbar-transparent){
+        background: linear-gradient(to right, #0080ff9d, #6200ff9d);
+}
+
