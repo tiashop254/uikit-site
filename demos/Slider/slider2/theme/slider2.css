@@ -22,10 +22,21 @@ html, p{
     color: #fff;
 }
 
+.uk-button-dark{
+    color: #300;
+    border-color: #300;
+}
+
 .uk-button-default:hover{
     color: #fff;
     background-color: #999;
     border-color: #999;
+}
+
+.uk-button-dark:hover{
+    color:#fff;
+    background-color: #33000088;
+    border-color: #300;
 }
 
 .uk-button-text{
@@ -114,4 +125,17 @@ html, p{
 
 .tm-background-beige:not(.uk-navbar-transparent){
     background-color: #a6a9a0;
+}
+
+.tm-dark{
+    color:#300;
+}
+
+.tm-dark:hover{
+    color:#300;
+}
+
+.uk-slider-items li.tm-item{
+    max-width: 50%;
+    max-height: -webkit-fill-available;
 }
