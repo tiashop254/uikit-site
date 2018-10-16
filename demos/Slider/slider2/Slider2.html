@@ -4,15 +4,15 @@
 
     <head>
 
-        <title>Slider 1 - UIkit Demo</title>
+        <title>Slider 2 - UIkit Demo</title>
         <meta charset="utf-8">
-        <title>Slider 1 - UIkit demo</title>
+        <title>Slider 2- UIkit demo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../../css/theme.css" />
         <link rel="stylesheet" href="./theme/slider2.css" />
         <script src="../../../assets/uikit/dist/js/uikit.min.js"></script>
         <script src="../../../assets/uikit/dist/js/uikit-icons.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Kanit|Inconsolata|Lato|Montserrat|Poppins|Open+Sans|Source+Serif+Pro|Lora" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kanit|Inconsolata|Lato|Montserrat|Poppins|Open+Sans|Source+Serif+Pro|Lora|Playfair+Display" rel="stylesheet">
 
     </head>
 
@@ -28,7 +28,7 @@
 
 	    					<a href="https://getuikit.com" class="uk-navbar-item uk-logo tm-dark">
 
-	                            <img uk-svg="" src="" class="uk-margin-small-right" hidden="true"> 
+	                            <img uk-cover uk-svg="" src="" class="uk-margin-small-right" hidden="true"> 
 
 	                            <svg width="28" height="34" viewBox="0 0 28 34" xmlns="http://www.w3.org/2000/svg" class="uk-margin-small-right uk-svg">
 	                                <polygon fill="#fff" points="19.1,4.1 13.75,1 8.17,4.45 13.6,7.44 "></polygon>
@@ -45,7 +45,7 @@
 
 	    					<div class="uk-visible@s uk-navbar-item">
 	                    
-	                            <a href="../download" class="uk-button uk-button-dark uk-button-default uk-icon">Github</a>
+	                            <a href="../download" class="uk-button uk-button-dark uk-button-default">Github</a>
 	                    
 	                        </div>
 	                    
@@ -72,53 +72,171 @@
 
 	    	</div>
 
-	    	<div class="uk-flex uk-flex-center uk-height-viewport uk-overflow-hidden"uk-slider="sets: true;center: true;velocity: 0.7">
+	    	<div uk-height-viewport class="uk-slider-container" uk-slider="center: true;">
 
+	    		<div class="uk-position-relative">
 
-	            	<ul class="uk-slider-items uk-grid">
+	            	<ul class="uk-slider-items uk-grid-large uk-grid-match uk-grid" uk-height-viewport="min-height: 200">
 
-	            		<li class="tm-item uk-width-1-1 uk-width-1-2@s uk-margin-xlarge-right" style="order: 1;">
+						<li class="uk-width-1-2 " style="order: 1; overflow:visible">
 
-							<div class=" uk-transition-toggle  uk-height-viewport" tabindex="0">
-								<img src="https://images.pexels.com/photos/797648/pexels-photo-797648.jpeg?&auto=format&fit=crop&w=800">
+							<div uk-slider-parallax="scale:.6,1,.6" class="uk-cover-container" tabindex="0">
+
+								<div id="hver" class="uk-animation-reverse" aria-hidden="false" visible>
+									
+								<img uk-cover class="tm-slider-img" src="https://images.unsplash.com/photo-1496851473196-e26508c21494?&auto=format&fit=crop&h=1200">
+
+								<div uk-slider-parallax="opacity:.5,.1,.5" class="tm-overlay uk-height-viewport"></div>
+							
+								</div>
+
+							</div>
+
+							<div class="tm-position-left-out uk-flex uk-flex-column uk-flex-bottom" style="width:auto">
+
+								<div uk-slider-parallax="x:2000,0,-2000" class="uk-overflow-hidden">
+
+									<h1 uk-slider-parallax="x:-2000,0,2000" class="uk-heading-hero uk-position-relative tm-dark tm-background-light">Lorem ipsum</h1>
+
+								</div>
+
+								<div uk-slider-parallax="x:000,0,000" class="uk-overflow-hidden">
+
+									<p uk-slider-parallax="x:2000,0,-2000" class="uk-h3 uk-position-relative tm-dark tm-background-light" style="font-style:oblique"> München, Germany</p>
+
+								</div>
+
+								<div uk-slider-parallax="x:000,0,000" class="uk-overflow-hidden uk-margin-large-top">
+
+									<a uk-toggle="mode:hover;target:#hover;animation:none,uk-animation-kenburns;duration:null" uk-slider-parallax="x:5000,0,-5000" href="" class="uk-button uk-button-dark uk-button-large uk-text-large uk-text-lowercase uk-padding-small">read more</a>
+
+								</div>
+
+							</div>
+
+							<div class="uk-h4 tm-section-title uk-position-center-right-out uk-width-auto">
+								<p style="font-style: oblique;">by Marc Fischer, 04/2013</p>
+								
+							</div>
+							
+
+						</li>	
+
+						<li class="uk-width-1-2 " style="order: 1; overflow:visible">
+
+							<div uk-slider-parallax="scale:.6,1,.6" class="uk-cover-container" tabindex="0">
+
+								<img uk-cover class="tm-slider-img" src="https://images.unsplash.com/photo-1508285007499-8274a7bad68f?&auto=format&fit=crop&h=1200">
+
+								<div uk-slider-parallax="opacity:.5,.1,.5" class="tm-overlay uk-height-viewport"></div>
+
+							</div>
+
+							<div class="tm-position-left-out uk-flex uk-flex-column uk-flex-bottom" style="width:auto">
+
+								<div uk-slider-parallax="x:2000,0,-2000" class="uk-overflow-hidden">
+
+									<h1 uk-slider-parallax="x:-2000,0,2000" class="uk-heading-hero uk-position-relative tm-dark tm-background-light">Lorem ipsum</h1>
+
+								</div>
+
+								<div uk-slider-parallax="x:000,0,000" class="uk-overflow-hidden">
+
+									<p uk-slider-parallax="x:-2000,0,2000" class="uk-h1 uk-position-relative tm-dark tm-background-light">Lorem ipsum</p>
+
+								</div>
+
 							</div>
 
 						</li>	
 
-						<li class="tm-item uk-width-1-1 uk-width-1-2@s uk-margin-xlarge-right" style="order: 1;">
+						<li class="uk-width-1-2" style="order: 1; overflow:visible">
 
-							<div class="uk-transition-toggle uk-height-viewport" tabindex="0">
-								<img src="https://images.pexels.com/photos/797648/pexels-photo-797648.jpeg?&auto=format&fit=crop&w=800">
+							<div uk-slider-parallax="scale:.6,1,.6" class="uk-cover-container" tabindex="0">
+
+								<img uk-cover class="tm-slider-img" src="https://images.unsplash.com/photo-1519801671298-75871a4d9bfc?&auto=format&fit=crop&h=1200">
+							
+								<div uk-slider-parallax="opacity:.5,.1,.5" class="tm-overlay uk-height-viewport"></div>
+
+							</div>
+
+							<div class="tm-position-left-out uk-flex uk-flex-column uk-flex-bottom" style="width:auto">
+
+								<div uk-slider-parallax="x:2000,0,-2000" class="uk-overflow-hidden">
+
+									<h1 uk-slider-parallax="x:-2000,0,2000" class="uk-heading-hero uk-position-relative tm-dark tm-background-light">Lorem ipsum</h1>
+
+								</div>
+
+								<div uk-slider-parallax="x:000,0,000" class="uk-overflow-hidden">
+
+									<p uk-slider-parallax="x:-2000,0,2000" class="uk-h1 uk-position-relative tm-dark tm-background-light">Lorem ipsum</p>
+
+								</div>
+
 							</div>
 
 						</li>	
 
-						<li class="tm-item uk-width-1-1 uk-width-1-2@s uk-margin-xlarge-right" style="order: 1;">
+						<li class="uk-width-1-2" style="order: 1; overflow:visible">
 
-							<div class="uk-transition-toggle uk-height-viewport" tabindex="0">
-								<img src="https://images.pexels.com/photos/797648/pexels-photo-797648.jpeg?&auto=format&fit=crop&w=800">
+							<div uk-slider-parallax="scale:.6,1,.6" class="uk-cover-container" tabindex="0">
+
+								<img uk-cover class="tm-slider-img" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?&auto=format&fit=crop&h=1200">
+
+								<div uk-slider-parallax="opacity:.5,.1,.5" class="tm-overlay uk-height-viewport"></div>
+
+							</div>
+
+							<div class="tm-position-left-out uk-flex uk-flex-column uk-flex-bottom" style="width:auto">
+
+								<div uk-slider-parallax="x:2000,0,-2000" class="uk-overflow-hidden">
+
+									<h1 uk-slider-parallax="x:-2000,0,2000" class="uk-heading-hero uk-position-relative tm-dark tm-background-light">Lorem ipsum</h1>
+
+								</div>
+
+								<div uk-slider-parallax="x:000,0,000" class="uk-overflow-hidden">
+
+									<p uk-slider-parallax="x:-2000,0,2000" class="uk-h1 uk-position-relative tm-dark tm-background-light">Lorem ipsum</p>
+
+								</div>
+
 							</div>
 
 						</li>	
 
-						<li class="tm-item uk-width-1-1 uk-width-1-2@s uk-margin-xlarge-right" style="order: 1;">
+						<li class="uk-width-1-2" style="order: 1; overflow:visible">
 
-							<div class="uk-transition-toggle uk-height-viewport" tabindex="0">
-								<img src="https://images.pexels.com/photos/797648/pexels-photo-797648.jpeg?&auto=format&fit=crop&w=800">
+							<div uk-slider-parallax="scale:.6,1,.6" class="uk-cover-container" tabindex="0">
+
+								<img uk-cover class="tm-slider-img" src="https://images.unsplash.com/photo-1504450075628-39777da238ed?&auto=format&fit=crop&h=1200">
+							
+								<div uk-slider-parallax="opacity:.5,.1,.5" class="tm-overlay uk-height-viewport"></div>
+
 							</div>
 
-						</li>	
+							<div class="tm-position-left-out uk-flex uk-flex-column uk-flex-bottom" style="width:auto">
 
-						<li class="tm-item uk-width-1-1 uk-width-1-2@s uk-margin-xlarge-right" style="order: 1;">
+								<div uk-slider-parallax="x:2000,0,-2000" class="uk-overflow-hidden">
 
-							<div class="uk-transition-toggle uk-height-viewport uk-cover-container" tabindex="0">
-								<img src="https://images.pexels.com/photos/797648/pexels-photo-797648.jpeg?&auto=format&fit=crop&w=800">
+									<h1 uk-slider-parallax="x:-2000,0,2000" class="uk-heading-hero uk-position-relative tm-dark tm-background-light">Lorem ipsum</h1>
+
+								</div>
+
+								<div uk-slider-parallax="x:000,0,000" class="uk-overflow-hidden">
+
+									<p uk-slider-parallax="x:-2000,0,2000" class="uk-h1 uk-position-relative tm-dark tm-background-light">Lorem ipsum</p>
+
+								</div>
+
 							</div>
 
 						</li>	
 
 	    			</ul>
 
+	    		</div>
 
 	    	</div>
 	 

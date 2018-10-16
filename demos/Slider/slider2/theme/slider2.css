@@ -1,13 +1,17 @@
 .uk-heading-primary, .uk-heading-hero{
-    font-family: 'Lora', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
-h1, h2, h3, h4, h5, h6, .uk-card h1, .uk-card .button{
-    font-family: 'Montserrat', sans-serif;
+h1, h2, h3, h4, h5, h6, .uk-card h1, .uk-h1,.uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-card .button{
+    font-family: 'Playfair Display', serif;
 }
 
 html, p{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+
+.uk-navbar *{
+    font-family: 'Montserrat' , sans-serif;
 }
 
 .uk-light {
@@ -23,8 +27,8 @@ html, p{
 }
 
 .uk-button-dark{
-    color: #300;
-    border-color: #300;
+    background-color:#fff;
+    color: #222;
 }
 
 .uk-button-default:hover{
@@ -34,10 +38,10 @@ html, p{
 }
 
 .uk-button-dark:hover{
-    color:#fff;
-    background-color: #33000088;
-    border-color: #300;
-}
+    background-color: #ffffff;
+    color:#222;
+    border-color: #222;
+ }   
 
 .uk-button-text{
     color: #fff;
@@ -53,13 +57,12 @@ html, p{
 }
 
 .uk-heading-hero{
-    color: #111;
     font-weight: 400;
 }
 
 @media (min-width: 1200px){
 .uk-heading-hero{
-    font-size: 7.8rem;
+    font-size: 6.8rem;
 }}
 
 .tm-background-muted{
@@ -68,15 +71,6 @@ html, p{
 
 .uk-heading-primary{
     color: #111;
-}
-
-.uk-slider-items li{
-    max-width:450px;
-    overflow: hidden;
-    max-height: 600px;
-    width:fit-content;
-}
-.uk-slider-items li img{
 }
 
 .tm-section-title {
@@ -122,20 +116,36 @@ html, p{
     transform: rotate(180deg);
 }
 
-
-.tm-background-beige:not(.uk-navbar-transparent){
-    background-color: #a6a9a0;
+.tm-overlay{
+    background-color: #000;
+    opacity: .4;
 }
 
 .tm-dark{
-    color:#300;
+    color:#000;
 }
 
-.tm-dark:hover{
-    color:#300;
+.tm-background-light{
+    background-color:#fff;
 }
 
-.uk-slider-items li.tm-item{
-    max-width: 50%;
-    max-height: -webkit-fill-available;
+.tm-position-left-out{    
+    position: absolute;
+    left: -10%;
+    top: 20%;
+    width: max-content;
+}
+
+.tm-slider-img{
+    width: 1544px; 
+    height: 1030px;
+}
+
+.uk-slider * .uk-button:hover{
+    background-color: black;
+    color:white;
+}
+
+.uk-logo.tm-dark:hover{
+    color:#000;
 }
