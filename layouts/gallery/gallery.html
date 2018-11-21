@@ -16,7 +16,6 @@
 
     <body>
 
-
         <nav class="uk-navbar-container">
 
             <div class="uk-container uk-container-expand" uk-navbar>
@@ -30,7 +29,7 @@
 
                 <div class="uk-navbar-right"> 
 
-                    <ul class="uk-navbar-nav">
+                    <ul class="uk-navbar-nav uk-visible@m">
 
                         <li class="uk-navbar-item uk-active">
                             <a href="#">Item</a>
@@ -45,6 +44,12 @@
                         </li>
 
                     </ul>
+
+                    <a uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle="" class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon">
+
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg>
+
+                    </a>
 
                 </div>
 
@@ -94,21 +99,25 @@
 
                     <li class="tag-3">
 
-                        <div class="uk-first-column uk-text-center uk-card">
+                        <div class="uk-first-column uk-text-center uk-card" uk-toggle="cls: uk-card-default; mode: hover;">
 
-                            <div class="uk-card-media-top uk-position-relative">
+                            <div class="uk-padding-small">
 
-                                <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
-                                <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 3</a>
+                                <div class="uk-card-media-top uk-position-relative">
 
-                            </div>
+                                    <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
+                                    <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 3</a>
 
-                            <div class="uk-card-body uk-text-left uk-padding-remove-horizontal">
+                                </div>
 
-                                <h4 class="uk-card-title">Lorem ipsum</h4>
+                                <div class="uk-card-body uk-text-left uk-padding-small uk-padding-remove-horizontal">
 
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                            
+                                    <h5 class="uk-card-title">Lorem ipsum</h5>
+
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                
+                                </div>
+
                             </div>
 
                         </div>
@@ -117,21 +126,25 @@
 
                     <li class="tag-1">
 
-                        <div class="uk-text-center uk-card">
+                        <div class="uk-text-center uk-card" uk-toggle="cls: uk-card-default; mode: hover;">
 
-                            <div class="uk-card-media-top uk-position-relative">
+                            <div class="uk-padding-small">
 
-                                <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
-                                <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 1</a>
+                                <div class="uk-card-media-top uk-position-relative">
 
-                            </div>
+                                    <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
+                                    <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 1</a>
 
-                            <div class="uk-card-body uk-text-left uk-padding-remove-horizontal">
+                                </div>
 
-                                <h4 class="uk-card-title">Lorem ipsum</h4>
+                                <div class="uk-card-body uk-text-left uk-padding-small uk-padding-remove-horizontal">
 
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                            
+                                    <h5 class="uk-card-title">Lorem ipsum</h5>
+
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                
+                                </div>
+
                             </div>
 
                         </div>
@@ -140,21 +153,25 @@
 
                     <li class="tag-3">
 
-                        <div class="uk-text-center uk-card">
+                        <div class="uk-text-center uk-card" uk-toggle="cls: uk-card-default; mode: hover;">
 
-                            <div class="uk-card-media-top uk-position-relative">
+                            <div class="uk-padding-small">
 
-                                <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
-                                <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 3</a>
+                                <div class="uk-card-media-top uk-position-relative">
 
-                            </div>
+                                    <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
+                                    <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 3</a>
 
-                            <div class="uk-card-body uk-text-left uk-padding-remove-horizontal">
+                                </div>
 
-                                <h4 class="uk-card-title">Lorem ipsum</h4>
+                                <div class="uk-card-body uk-text-left uk-padding-small uk-padding-remove-horizontal">
 
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                            
+                                    <h5 class="uk-card-title">Lorem ipsum</h5>
+
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                
+                                </div>
+
                             </div>
 
                         </div>
@@ -163,21 +180,25 @@
 
                     <li class="tag-2">
 
-                        <div class="uk-text-center uk-card">
+                        <div class="uk-text-center uk-card" uk-toggle="cls: uk-card-default; mode: hover;">
 
-                            <div class="uk-card-media-top uk-position-relative">
+                            <div class="uk-padding-small">
 
-                                <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
-                                <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 2</a>
+                                <div class="uk-card-media-top uk-position-relative">
 
-                            </div>
+                                    <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
+                                    <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 2</a>
 
-                            <div class="uk-card-body uk-text-left uk-padding-remove-horizontal">
+                                </div>
 
-                                <h4 class="uk-card-title">Lorem ipsum</h4>
+                                <div class="uk-card-body uk-text-left uk-padding-small uk-padding-remove-horizontal">
 
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                            
+                                    <h5 class="uk-card-title">Lorem ipsum</h5>
+
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                
+                                </div>
+
                             </div>
 
                         </div>
@@ -186,21 +207,25 @@
 
                     <li class="tag-3">
 
-                        <div class="uk-text-center uk-card">
+                        <div class="uk-text-center uk-card" uk-toggle="cls: uk-card-default; mode: hover;">
 
-                            <div class="uk-card-media-top uk-position-relative">
+                            <div class="uk-padding-small">
 
-                                <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
-                                <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 3</a>
+                                <div class="uk-card-media-top uk-position-relative">
 
-                            </div>
+                                    <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
+                                    <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 3</a>
 
-                            <div class="uk-card-body uk-text-left uk-padding-remove-horizontal">
+                                </div>
 
-                                <h4 class="uk-card-title">Lorem ipsum</h4>
+                                <div class="uk-card-body uk-text-left uk-padding-small uk-padding-remove-horizontal">
 
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                            
+                                    <h5 class="uk-card-title">Lorem ipsum</h5>
+
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                
+                                </div>
+
                             </div>
 
                         </div>
@@ -209,21 +234,25 @@
 
                     <li class="tag-2">
 
-                        <div class="uk-text-center uk-card">
+                        <div class="uk-text-center uk-card" uk-toggle="cls: uk-card-default; mode: hover;">
 
-                            <div class="uk-card-media-top uk-position-relative">
+                            <div class="uk-padding-small">
 
-                                <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
-                                <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 2</a>
+                                <div class="uk-card-media-top uk-position-relative">
 
-                            </div>
+                                    <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
+                                    <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 2</a>
 
-                            <div class="uk-card-body uk-text-left uk-padding-remove-horizontal">
+                                </div>
 
-                                <h4 class="uk-card-title">Lorem ipsum</h4>
+                                <div class="uk-card-body uk-text-left uk-padding-small uk-padding-remove-horizontal">
 
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                            
+                                    <h5 class="uk-card-title">Lorem ipsum</h5>
+
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                
+                                </div>
+
                             </div>
 
                         </div>
@@ -232,21 +261,25 @@
 
                     <li class="tag-2">
 
-                        <div class="uk-text-center uk-card">
+                        <div class="uk-text-center uk-card" uk-toggle="cls: uk-card-default; mode: hover;">
 
-                            <div class="uk-card-media-top uk-position-relative">
+                            <div class="uk-padding-small">
 
-                                <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
-                                <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 2</a>
+                                <div class="uk-card-media-top uk-position-relative">
 
-                            </div>
+                                    <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
+                                    <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 2</a>
 
-                            <div class="uk-card-body uk-text-left uk-padding-remove-horizontal">
+                                </div>
 
-                                <h4 class="uk-card-title">Lorem ipsum</h4>
+                                <div class="uk-card-body uk-text-left uk-padding-small uk-padding-remove-horizontal">
 
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                            
+                                    <h5 class="uk-card-title">Lorem ipsum</h5>
+
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                
+                                </div>
+
                             </div>
 
                         </div>
@@ -255,21 +288,25 @@
 
                     <li class="tag-1">
 
-                        <div class="uk-text-center uk-card">
+                        <div class="uk-text-center uk-card" uk-toggle="cls: uk-card-default; mode: hover;">
 
-                            <div class="uk-card-media-top uk-position-relative">
+                            <div class="uk-padding-small">
 
-                                <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
-                                <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 1</a>
+                                <div class="uk-card-media-top uk-position-relative">
 
-                            </div>
+                                    <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
+                                    <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 1</a>
 
-                            <div class="uk-card-body uk-text-left uk-padding-remove-horizontal">
+                                </div>
 
-                                <h4 class="uk-card-title">Lorem ipsum</h4>
+                                <div class="uk-card-body uk-text-left uk-padding-small uk-padding-remove-horizontal">
 
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                            
+                                    <h5 class="uk-card-title">Lorem ipsum</h5>
+
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                
+                                </div>
+
                             </div>
 
                         </div>
@@ -278,21 +315,25 @@
 
                     <li class="tag-3">
 
-                        <div class="uk-text-center uk-card">
+                        <div class="uk-text-center uk-card" uk-toggle="cls: uk-card-default; mode: hover;">
 
-                            <div class="uk-card-media-top uk-position-relative">
+                            <div class="uk-padding-small">
 
-                                <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
-                                <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 3</a>
+                                <div class="uk-card-media-top uk-position-relative">
 
-                            </div>
+                                    <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
+                                    <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 3</a>
 
-                            <div class="uk-card-body uk-text-left uk-padding-remove-horizontal">
+                                </div>
 
-                                <h4 class="uk-card-title">Lorem ipsum</h4>
+                                <div class="uk-card-body uk-text-left uk-padding-small uk-padding-remove-horizontal">
 
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                            
+                                    <h5 class="uk-card-title">Lorem ipsum</h5>
+
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                
+                                </div>
+
                             </div>
 
                         </div>
@@ -301,21 +342,25 @@
 
                     <li class="tag-1">
 
-                        <div class="uk-text-center uk-card">
+                        <div class="uk-text-center uk-card" uk-toggle="cls: uk-card-default; mode: hover;">
 
-                            <div class="uk-card-media-top uk-position-relative">
+                            <div class="uk-padding-small">
 
-                                <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
-                                <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 1</a>
+                                <div class="uk-card-media-top uk-position-relative">
 
-                            </div>
+                                    <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
+                                    <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 1</a>
 
-                            <div class="uk-card-body uk-text-left uk-padding-remove-horizontal">
+                                </div>
 
-                                <h4 class="uk-card-title">Lorem ipsum</h4>
+                                <div class="uk-card-body uk-text-left uk-padding-small uk-padding-remove-horizontal">
 
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                            
+                                    <h5 class="uk-card-title">Lorem ipsum</h5>
+
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                
+                                </div>
+
                             </div>
 
                         </div>
@@ -324,21 +369,25 @@
 
                     <li class="tag-2">
 
-                        <div class="uk-text-center uk-card">
+                        <div class="uk-text-center uk-card" uk-toggle="cls: uk-card-default; mode: hover;">
 
-                            <div class="uk-card-media-top uk-position-relative">
+                            <div class="uk-padding-small">
 
-                                <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
-                                <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 2</a>
+                                <div class="uk-card-media-top uk-position-relative">
 
-                            </div>
+                                    <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
+                                    <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 2</a>
 
-                            <div class="uk-card-body uk-text-left uk-padding-remove-horizontal">
+                                </div>
 
-                                <h4 class="uk-card-title">Lorem ipsum</h4>
+                                <div class="uk-card-body uk-text-left uk-padding-small uk-padding-remove-horizontal">
 
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                            
+                                    <h5 class="uk-card-title">Lorem ipsum</h5>
+
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                
+                                </div>
+
                             </div>
 
                         </div>
@@ -347,21 +396,25 @@
 
                     <li class="tag-2">
 
-                        <div class="uk-text-center uk-card">
+                        <div class="uk-text-center uk-card" uk-toggle="cls: uk-card-default; mode: hover;">
 
-                            <div class="uk-card-media-top uk-position-relative">
+                            <div class="uk-padding-small">
 
-                                <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
-                                <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 2</a>
+                                <div class="uk-card-media-top uk-position-relative">
 
-                            </div>
+                                    <img src="https://images.unsplash.com/photo-1527232165582-78c982a1cad1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ee9f84272af2e5ebd2dbc9885ac279&auto=format&fit=crop&h=450" class="">
+                                    <a class="uk-badge uk-position-bottom-right uk-position-small uk-padding-small">Tag 2</a>
 
-                            <div class="uk-card-body uk-text-left uk-padding-remove-horizontal">
+                                </div>
 
-                                <h4 class="uk-card-title">Lorem ipsum</h4>
+                                <div class="uk-card-body uk-text-left uk-padding-small uk-padding-remove-horizontal">
 
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                            
+                                    <h5 class="uk-card-title">Lorem ipsum</h5>
+
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                
+                                </div>
+
                             </div>
 
                         </div>
@@ -411,11 +464,11 @@
 
         </div>
 
-        <div class="uk-section uk-section uk-section-secondary uk-light">
+        <div class="uk-section uk-section-small uk-section-secondary uk-light">
             
             <div class="uk-container">
 
-                <div class="uk-child-width-expand@s uk-grid-divider uk-margin-large uk-text-center uk-text-left@s" uk-grid>
+                <div class="uk-child-width-expand@m uk-child-width-1-2@s uk-grid-divider uk-margin-medium uk-text-center uk-text-left@s uk-grid-small" uk-grid>
 
                     <div class="uk-first-column">
 
@@ -495,7 +548,8 @@
                     
                     <div>
                         <a class="uk-logo" href="#">
-                        <canvas width="28" height="34" uk-svg="" src="../../images/uikit-logo.svg" class="uk-margin-small-right" hidden="true"></canvas>Logo</a>
+                            <canvas width="28" height="34" uk-svg="" src="../../images/uikit-logo.svg" class="uk-margin-small-right" hidden="true"></canvas>Logo
+                        </a>
                     </div>
 
                     <div class="uk-text-right">
@@ -515,7 +569,35 @@
 
         </div>
 
+        <div id="offcanvas" class="uk-offcanvas" uk-offcanvas="flip: true; overlay: true">
+            
+            <div class="uk-offcanvas-bar">
+                
+                <div class="uk-margin-bottom uk-text-center">
+                    <a class="uk-logo" href="#">
+                        <canvas width="28" height="34" uk-svg="" src="../../images/uikit-logo.svg" class="uk-margin-small-right" hidden="true"></canvas>Logo
+                    </a>
+                </div>
 
+                <ul class="uk-nav uk-navbar-nav uk-display-block">
+
+                        <li class="uk-navbar-item uk-active">
+                            <a href="#">Item</a>
+                        </li>
+
+                        <li class="uk-navbar-item" >
+                            <a href="#">Item</a>
+                        </li>
+
+                        <li class="uk-navbar-item" >
+                            <a href="#">Item</a>
+                        </li>
+
+                    </ul>
+
+            </div>
+
+        </div>
 
     </body>
 
