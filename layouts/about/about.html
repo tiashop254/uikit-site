@@ -4,7 +4,7 @@
 
     <head>
 
-        <title>Imprint - UIkit Layouts</title>
+        <title>About - UIkit Layouts</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../css/theme.css" />
@@ -45,7 +45,7 @@
 
                         <li class="uk-navbar-item">
 
-                            <a href="../feature/feature.html">Freature</a>
+                            <a href="../feature/feature.html">Feature</a>
 
                         </li>
 
@@ -55,7 +55,7 @@
 
                         </li>
 
-                        <li class="uk-navbar-item">
+                        <li class="uk-navbar-item uk-active">
                             
                             <a href="../about/about.html">About</a>
 
@@ -83,23 +83,19 @@
 
                         <li class="uk-navbar-item">
 
-                            <a href="../contact/contact.html">Contact</a>
+                            <a href="#">Contact</a>
 
                         </li>
 
                         <li class="uk-navbar-item">
-                            
-                            <a href="../signin/signin.html"> Sign In</a>
 
-                        </li>
-
-                        <li class="uk-navbar-item uk-active">
-
-                            <a href="#">Imprint</a>
+                            <a href="../imprint/imprint.html">Imprint</a>
 
                         </li>
 
                     </ul>
+
+                    <a class="uk-margin-left uk-button uk-button-primary" href="#"> Sign In</a>
 
                     <a uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle="" class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon">
 
@@ -113,29 +109,102 @@
 
         </nav>
 
-        <div class="uk-child-width-1-2@m" uk-grid>
-
-            <div class="uk-section uk-background-cover" data-srcset="https://images.unsplash.com/photo-1522827489705-0616731a52a8?&auto=format&fit=crop&w=1300" data-src="https://images.unsplash.com/photo-1522827489705-0616731a52a8?&auto=format&fit=crop&w=1300" uk-height-viewport="offset-top: true; offset-bottom: 10%" uk-img>
-
+        <div class="uk-section uk-section-xlarge uk-background-cover" data-srcset="https://images.unsplash.com/photo-1496192173661-0361468cb14a?&auto=format&;fit=crop&h=700" data-src="https://images.unsplash.com/photo-1496192173661-0361468cb14a?&auto=format&;fit=crop&h=700" uk-img="" uk-parallax="bgy: -100,0">
             </div>
+
+        <div class="uk-section uk-section-large">
             
-            <div class="uk-section uk-section-xlarge uk-flex uk-flex-middle uk-text-center uk-text-left@m">
+            <div class="uk-container">
+                
+                <h1 class="uk-heading-hero">Contact</h1>
 
-                <div class="uk-container uk-container-small">
+                <hr class="uk-width-small uk-margin-medium-bottom">
 
-                    <h1 class="uk-heading-hero">Imprint</h1>
+                <div class="uk-grid-large" uk-grid>
+                    
+                    <div class="uk-width-2-3@m">
 
-                    <h2 class="uk-h3 uk-text-bold uk-margin-remove-bottom">The Name of This Company</h2>
+                        <div class="uk-margin-xlarge">
 
-                    <h4 class="uk-margin-small-top">+34-5678912 <br>Loremipsum Street 123 <br>45678 Dolor City, Country</h4>
+                            <p class="uk-h4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.</p>
 
-                    <h4 class="">loremipsum@example.com <br>Lorem: Ipsum Dolor Sit Amet <br> ABCD: 45678 1234</h4>
+                        </div>
 
-                    <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</h4>
+                        <div>
+                            
+                            <form class="uk-form-stacked uk-width-xlrge uk-margin-large-top">
+
+                                <div class="uk-child-width-1-2@s" uk-grid>
+
+                                    <div class="">
+
+                                        <label class="uk-form-label" for="form-name">Name <span class="uk-text-danger">*</span></label>
+
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input uk-form-large" id="form-name" name="name" type="text" placeholder="Your Name">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="">
+
+                                        <label class="uk-form-label" for="form-email">E-Mail Adress <span class="uk-text-danger">*</span></label>
+
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input uk-form-large" id="form-email" name="email" type="text" placeholder="Your E-Mail Adress">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="uk-margin">
+
+                                    <label class="uk-form-label" for="form-subject">Subject</label>
+
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input uk-form-large" id="form-subject" name="subject" type="text" placeholder="Your Subject">
+                                    </div>
+
+                                </div>
+
+                                <div class="uk-margin">
+
+                                    <label class="uk-form-label" for="form-s-textarea">Message <span class="uk-text-danger">*</span></label>
+
+                                    <textarea class="uk-textarea uk-form-large" id="form-message" rows="9" placeholder="Your Message"></textarea>
+
+                                </div>
+
+                                <a class="uk-button uk-button-large uk-button-primary">Send</a>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                    <div class="uk-width-1-3@m">
+
+                        <div class="uk-card uk-card-secondary uk-card-body uk-card-large uk-text-left@m uk-text-center">
+
+                            <p class="uk-h2">+123 4567 890<br>mail@example.com</p>
+
+                            <p class="uk-h3">Example Street 1234<br>56789 City</p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
             </div>
+
+        </div>
+
+        <div class="uk-section uk-padding-remove">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.84406258669!2d10.007317116276004!3d53.542698480020746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18efa5201e37b%3A0x7cc145ef645d5862!2sOberhafen%2C+20457+Hamburg!5e0!3m2!1sde!2sde!4v1543839743652" width="2300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 
         </div>
 
@@ -295,21 +364,21 @@
 
                     </li>
 
-                    <li class="">
+                    <li class="uk-active">
 
-                        <a href="../contact/contact.html">Contact</a>
-
-                    </li>
-
-                    <li>
-                        
-                        <a href="../signin/signin.html"> Sign In</a>
+                        <a href="#">Contact</a>
 
                     </li>
 
                     <li class="uk-active">
 
-                        <a href="#">Imprint</a>
+                        <a href="#">Sign In</a>
+
+                    </li>
+                    
+                    <li class="">
+
+                        <a href="../imprint/imprint.html">Imprint</a>
 
                     </li>
 
