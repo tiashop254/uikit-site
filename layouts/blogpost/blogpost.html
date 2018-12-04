@@ -16,7 +16,6 @@
 
     <body>
 
-
         <nav class="uk-navbar-container">
 
             <div class="uk-container uk-container-expand" uk-navbar>
@@ -51,14 +50,34 @@
                         </li>
 
                         <li class="uk-navbar-item">
-
-                            <a href="../pricing/pricing.html">Pricing</a>
-
-                        </li>
-
-                        <li class="uk-navbar-item">
                             
                             <a href="../about/about.html">About</a>
+
+                            <div class="uk-navbar-dropdown">
+
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+
+                                    <li class="">
+
+                                        <a href="../pricing/pricing.html">Pricing</a>
+
+                                    </li>
+
+                                    <li class="">
+
+                                        <a href="../contact/contact.html">Contact</a>
+
+                                    </li>
+
+                                    <li class="">
+
+                                        <a href="../imprint/imprint.html">Imprint</a>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
 
                         </li>
 
@@ -72,35 +91,19 @@
 
                                     <li class="uk-active">
 
-                                        <a href="#">Blog Post</a>
+                                        <a href="../blogpost/blogpost.html">Blog Post</a>
 
                                     </li>
 
                                 </ul>
 
                             </div>
-
-                        </li>
-
-                        <li class="">
-
-                            <a href="../contact/contact.html">Contact</a>
-
-                        </li>
-
-                        <li>
-                            
-                            <a href="../signin/signin.html"> Sign In</a>
-
-                        </li>
-
-                        <li class="">
-
-                            <a href="../imprint/imprint.html">Imprint</a>
                             
                         </li>
 
                     </ul>
+
+                    <a class="uk-margin-left uk-button uk-button-primary" href="../signin/signin.html">Sign In</a>
 
                     <a uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle="" class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon">
 
@@ -665,11 +668,9 @@
             <div class="uk-offcanvas-bar">
                 
                 <div class="uk-margin-bottom uk-text-center">
-
                     <a class="uk-logo" href="#">
                         <canvas width="28" height="34" uk-svg="" src="../../images/uikit-logo.svg" class="uk-margin-small-right" hidden="true"></canvas>Logo
                     </a>
-
                 </div>
 
                 <ul class="uk-nav uk-nav-primary uk-nav-center">
@@ -692,21 +693,27 @@
 
                     </li>
 
-                    <li class="uk-navbar-item">
-
-                        <a href="../pricing/pricing.html">Pricing</a>
-
-                    </li>
-
-                    <li class="uk-parent uk-active">
-
-                        <a href="../blog/blog.html">Blog</a>
+                    <li class="uk-parent">
+                        
+                        <a href="../about/about.html">About</a>
 
                         <ul class="uk-nav-sub">
 
-                            <li class="uk-active">
+                            <li class="">
 
-                                <a href="#">Blog Post</a>
+                                <a href="../pricing/pricing.html">Pricing</a>
+
+                            </li>
+
+                            <li class="">
+
+                                <a href="../contact/contact.html">Contact</a>
+
+                            </li>
+
+                            <li class="">
+
+                                <a href="../imprint/imprint.html">Imprint</a>
 
                             </li>
 
@@ -714,22 +721,20 @@
 
                     </li>
 
-                    <li class="">
+                    <li class="uk-active">
 
-                        <a href="../contact/contact.html">Contact</a>
+                        <a href="../blog/blog.html">Blog</a>
 
-                    </li>
+                        <ul class="uk-nav-sub">
 
-                    <li>
+                            <li class="uk-active">
+
+                                <a href="../blogpost/blogpost.html">Blog Post</a>
+
+                            </li>
+
+                        </ul>
                         
-                        <a href="../signin/signin.html"> Sign In</a>
-
-                    </li>
-
-                    <li class="">
-
-                        <a href="../imprint/imprint.html">Imprint</a>
-
                     </li>
 
                 </ul>
